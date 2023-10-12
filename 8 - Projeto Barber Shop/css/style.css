@@ -115,8 +115,11 @@ body {
 **** ABOUT ****
 ***************/
 
+/************************
+**** ABOUT - TIMING ****
+*************************/
+
 .about {
-    height: 100vh;
     background-color: var(--primary-color);
 }
 
@@ -127,12 +130,15 @@ body {
 .about .timing {
     width: 33%;
     background-image: url(/images/brush-big.jpg);
-    
+
     background-size: cover;
     background-repeat: no-repeat;
-   
+
     padding: 20px;
-    
+
+    position: relative;
+    top: -50px;
+
 }
 
 .about .timing .overlay {
@@ -185,6 +191,42 @@ body {
     margin-bottom: 15px;
 }
 
+/************************
+**** ABOUT - EXPERIENCE ****
+*************************/
+
 .about .experience {
     width: 66%;
+    margin-left: 7%;
+    margin-top: 100px;
+
+    color: white;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2::after {
+    display: block;
+    content: '';
+
+    width: 100px;
+    border-bottom: 3px solid #a38f78;
+
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+
+    font-weight: 100;
+    font-size: 17px;
 }
