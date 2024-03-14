@@ -1,5 +1,7 @@
 :root {
     --primary-color: #917758;
+    --primary-light-color: #f5eee6;
+    --secondary-color: #3c2915;
 }
 
 * {
@@ -229,4 +231,121 @@ body {
 
     font-weight: 100;
     font-size: 17px;
+}
+
+/**********************
+**** SERVICES  ****
+***********************/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--primary-light-color);
+}
+
+.services h2 {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .box {
+    border: 3px solid var(--primary-color); 
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4 {
+    color: var(--secondary-color);
+    margin-top: 30px;
+}
+
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/**********************
+**** APPOINTMENT  ****
+***********************/
+
+.appointment{
+    padding: 100px 0;
+    background-color: var(--primary-color);
+
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300pxs;
+}
+
+.appointment h2 {
+    color: var(--primary-light-color);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img {
+    margin: 0 auto;
+    display: block;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wraper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wraper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--primary-light-color);
+    font-size: 14px;
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.appointment textarea {
+    height: 100px;
+}
+
+.appointment button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
